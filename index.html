@@ -1,83 +1,254 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="author" content="大连宏裕元国际贸易有限公司有限公司"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>大连宏裕元国际贸易有限公司</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <script type="text/javascript" src="js/script.js"></script>
+    <SCRIPT src="js/flashobj.js" type="text/javascript"></SCRIPT>
+    <script src="css/leyu.js"></script>
+    <script type="text/javascript">
+        <!--
+        function MM_jumpMenu(targ, selObj, restore) { //v3.0
+            open(selObj.options[selObj.selectedIndex].value);
+            if (restore) selObj.selectedIndex = 0;
+        }
+        //-->
+    </script>
+</head>
 
-    <title>Hongyuyuan by mz121star</title>
-  </head>
+<body>
+<div class="top clearfix">
+    <h1 class="logo"><a href="http://www.icnbm.com/" title="大连宏裕元国际贸易有限公司">大连宏裕元国际贸易有限公司</a></h1>
 
-  <body>
-    <header>
-      <div class="inner">
-        <h1>Hongyuyuan</h1>
-        <h2>大连宏裕元</h2>
-        <a href="https://github.com/mz121star/hongyuyuan" class="button"><small>View project on</small>GitHub</a>
-      </div>
-    </header>
+    <div class="status">
+        <div class="statusTop">
+            <form name="form2" method="post" action="search.php" onsubmit="return checklogin();">
+                <label>站内搜索：</label>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+                <input name="keyword" class="status_text" id='keyword' type="text" value="" class="inputTxt" height="20"
+                       size="15"/>
+                <select name="item" id="item" style="margin-right:5px;">
+                    <option selected value="0">全部内容</option>
+                    <option value="2">公司新闻</option>
+                    <option value="3">业务领域</option>
+                    <option value="6">人力资源</option>
+                </select>
+                <input class="status_sub" id="button" class="refer" type="submit" style='padding-top:2px;'
+                       value="立即搜索"/>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-        </section>
-
-        <aside id="sidebar">
-          <a href="https://github.com/mz121star/hongyuyuan/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/mz121star/hongyuyuan/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
-
-          <p class="repo-owner"><a href="https://github.com/mz121star/hongyuyuan"></a> is maintained by <a href="https://github.com/mz121star">mz121star</a>.</p>
-
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
+            </form>
+        </div>
+        <p class="status_lang">
+            <a href="http://www.icnbm.com/" target="_blank">中文</a>
+            <span>|</span>
+            <a href="http://www.icnbm.com/en/" target="_blank" class="langblur">English</a></p>
     </div>
+</div>
+<div class="menumain">
+    <ul class="menu clearfix" id="menu">
+        <li><a href="index.php" title="首页">首页</a></li>
 
-  
-  </body>
+        <li>
+            <a title="关于我们" href="info.php?id=1">关于我们</a>
+            <dl>
+                <dd><a title=公司概况 href='info.php?id=11'>公司概况</a></dd>
+                <dd><a title=愿景使命 href='info.php?id=12'>愿景使命</a></dd>
+                <dd><a title=企业文化 href='info.php?id=13'>企业文化</a></dd>
+                <dd><a title=经营战略 href='info.php?id=14'>经营战略</a></dd>
+                <dd><a title=组织机构 href='info.php?id=15'>组织机构</a></dd>
+                <dd><a title=营销网络 href='info.php?id=16'>营销网络</a></dd>
+                <dd><a title=资质证书 href='events.php?id=17'>资质证书</a></dd>
+                <dd><a title=荣誉证书 href='events.php?id=70'>荣誉证书</a></dd>
+                <dd><a title=大事记 href='info.php?id=63'>大事记</a></dd>
+            </dl>
+        </li>
+        <li>
+            <a title="新闻中心" href="news.php?id=2">新闻中心</a>
+            <dl>
+                <dd><a title=公司新闻 href='newsli.php?id=19'>公司新闻</a></dd>
+                <dd><a title=行业动态 href='newsli.php?id=20'>行业动态</a></dd>
+                <dd><a title=普法宣传 href='newsli.php?id=79'>普法宣传</a></dd>
+            </dl>
+        </li>
+        <li>
+            <a title="业务领域" href="products.php?id=3">业务领域</a>
+            <dl>
+                <dd><a title=传统建材 href='prolist.php?id=21'>传统建材</a></dd>
+                <dd><a title=机械设备 href='prolist.php?id=22'>机械设备</a></dd>
+                <dd><a title=金属材料 href='prolist.php?id=23'>金属材料</a></dd>
+                <dd><a title=煤炭资源 href='prolist.php?id=24'>煤炭资源</a></dd>
+                <dd><a title=新型能源 href='prolist.php?id=25'>新型能源</a></dd>
+                <dd><a title=化工原料 href='prolist.php?id=80'>化工原料</a></dd>
+                <dd><a title=再生材料 href='prolist.php?id=83'>再生材料</a></dd>
+            </dl>
+        </li>
+        <li><a title="市场活动" href="news.php?id=4">市场活动</a>
+            <dl>
+                <dd><a title=市场推广 href='newsli.php?id=27'>市场推广</a></dd>
+                <dd><a title=展会预告 href='newsli.php?id=26'>展会预告</a></dd>
+                <dd><a title=展会报道 href='newsli.php?id=28'>展会报道</a></dd>
+                <dd><a title=易单网 href='newsli.php?id=78'>易单网</a></dd>
+            </dl>
+        </li>
+        <li><a title="海外机构" href="news.php?id=5">海外机构</a>
+            <dl>
+                <dd><a title=海外传真 href='newsli.php?id=29'>海外传真</a></dd>
+                <dd><a title=联系方式 href='info.php?id=34'>联系方式</a></dd>
+            </dl>
+        </li>
+        <li><a title="人力资源" href="info.php?id=6">人力资源</a>
+            <dl>
+                <dd><a title=人才战略 href='info.php?id=35'>人才战略</a></dd>
+                <dd><a title=员工风采 href='newsli.php?id=36'>员工风采</a></dd>
+                <dd><a title=员工培训 href='newsli.php?id=37'>员工培训</a></dd>
+                <dd><a title=薪酬绩效 href='info.php?id=86'>薪酬绩效</a></dd>
+                <dd><a title=工 会 href='info.php?id=87'>工 会</a></dd>
+            </dl>
+        </li>
+    </ul>
+</div>
+
+
+<!--BEGIN:banner-->
+<script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('#slider').nivoSlider({
+            effect: 'fade',
+            pauseTime: 4000
+        });
+    });
+</script>
+<div class="theme-default banner">
+    <div id="slider" class="nivoSlider">
+        <img src="images/index_banner01.jpg"/>
+        <img src="images/index_banner02.jpg"/>
+        <img src="images/index_banner03.jpg"/>
+        <img src="images/index_banner04.jpg"/>
+    </div>
+</div>
+<!--END:banner-->
+<!--BEGIN:content-->
+<div class="content clearfix">
+    <div class="content_quick">
+        <h2 class="content_quick_tit">快速入口</h2>
+        <ul class="content_quick_nav">
+            <li><a href="http://seller.okorder.com/" target="_blank" title="">易单网</a></li>
+            <li><a href="http://mail.icnbm.com/" target="_blank" title="">企业邮箱系统</a></li>
+            <li><a href="http://www.cnbmcrm.com/login/login.php" target="_blank" title="">ETP系统</a></li>
+            <li><a href="http://agent.okorder.com/index.php/Account/login/" target="_blank" title="">货运配载系统</a></li>
+            <li><a href="http://www.cnbmlearning.com/" target="_blank" title="">企业学习系统</a></li>
+            <li>
+                <a href="http://www.cnbmehr.com:8080/hire/employNetPortal/search_zp_position.do?b_query=link&operate=init&hireChannel=02"
+                   target="_blank" title="">招贤纳士</a></li>
+        </ul>
+        <div class="content_quick_web">
+            <div class="content_quick_webL">
+                <select onChange="var i=this.selectedIndex;window.open(this.options[i].value)" name="link_bhu"
+                        style="width:238px;">
+                    <option selected="selected">---友情链接---</option>
+                    <option value="http://www.cnbm.com.cn/"><a class=link
+                                                               href="http://www.cnbm.com.cn/">中国建筑材料集团有限公司</a></option>
+                    <option value="http://www.cnbminternational.com/"><a class=link
+                                                                         href="http://www.cnbminternational.com/">中建材集团进出口公司</a>
+                    </option>
+                    <option value="http://www.steel-mart.cn/"><a class=link
+                                                                 href="http://www.steel-mart.cn">无锡中建材钢铁有限公司</a>
+                    </option>
+                </select>
+            </div>
+
+        </div>
+    </div>
+    <div class="content_news">
+        <h2 class="content_news_tit"><a href="newsli.php?id=19" class="more_dot"></a><a href="newsli.php?id=19">公司新闻</a>
+        </h2>
+
+        <dl class="content_news_cont">
+            <dt><a href="newsinfo.php?id=19&iid=964" target="_blank" title=""><img
+                    src="/uploads/131105/140217/1-14021G0542D53.jpg" alt=""/></a></dt>
+            <dd>
+                <h3 class="content_news_cont_tit"><a href="newsinfo.php?id=19&iid=964" target="_blank"
+                                                     title="中建材国贸2013年终总结暨嘉年会圆满结束">中建材国贸2013年终总结暨嘉年会圆满结束</a></h3>
+
+                <p>
+
+
+                    2014年1月17日，大连宏裕元国际贸易有限公司有限公司（以下简称中建材国贸）在中国科技会堂召开了2013年终总结暨嘉年会。
+                    嘉年会在一曲气势磅礴的《春之鼓》中拉开序幕，中建材国贸北京总部全体员工及各分子公司员工代表600余人齐聚一堂，共享盛会。中建......</p>
+            </dd>
+        </dl>
+        <ul class="content_news_list">
+            <li><a href="newsinfo.php?id=19&iid=965" target="_blank"><em>·</em>易单网携手中信银行实现在线结汇服务</a>2014-02-28</li>
+            <li><a href="newsinfo.php?id=19&iid=963" target="_blank"><em>·</em>易单网、中国航天科技集团等单位联合发起成立中...</a>2014-01-20
+            </li>
+            <li><a href="newsinfo.php?id=19&iid=948" target="_blank"><em>·</em>张劲松总经理出席中乌企业经贸论坛 中...</a>2013-12-06</li>
+        </ul>
+    </div>
+    <div class="content_act">
+        <div class="content_actT">
+            <h2 class="content_news_tit"><a href="newsli.php?id=27" class="more_dot"></a><a
+                    href="newsli.php?id=27">市场活动</a></h2>
+            <dl class="content_news_cont actT_cont">
+                <dd>
+                    <h3 class="content_news_cont_tit"><a href="newsinfo.php?id=27&iid=949" target="_blank"
+                                                         title="外贸新模式—易单网再次亮相114届广交会&nbsp;">外贸新模式—易单网再次亮相114届广交会&nbsp;</a>
+                    </h3>
+
+                    <p>2013年10月15日，第114届中国进出口商品交易会（广交会）在广州开幕。
+                        作为世界500强的中国建材集团旗下的物流贸易版块的重要企业，大连宏裕元国际贸易有限公司有限公司旗下的易单网主要产......</p>
+                </dd>
+            </dl>
+        </div>
+        <div class="content_act_overseas">
+            <a href="info.php?id=34"><img src="images/index_map.jpg"/></a>
+        </div>
+    </div>
+</div>
+<!--END:content-->
+
+<div class="footer">
+    <div class="footer_nav">
+        <a href="information.php?id=9" title="法律声明">法律声明</a>|<a href="map.php?id=8" title="网站地图">网站地图</a>|<a
+            href="information.php?id=8" title="联系我们">联系我们</a>
+    </div>
+    <p>大连宏裕元国际贸易有限公司有限公司·页面版权所有：(C) 2005-2013 Copyright@2013 京ICP备09078545号
+    </p>
+    <script language="JavaScript" src="https://dunsregistered.dnb.com" type="text/javascript"></script>
+</div>
+<div style="display:none">
+    <script language="javascript" type="text/javascript" src="http://js.users.51.la/3111733.js"></script>
+    <noscript><a href="http://www.51.la/?3111733" target="_blank"><img
+            alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="http://img.users.51.la/3111733.asp"
+            style="border:none"/></a></noscript>
+
+    <script type="text/javascript">
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F9676aeb32dc80b372700456d0e98a506' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+
+    <script src="http://s94.cnzz.com/stat.php?id=4085910&web_id=4085910" language="JavaScript"></script>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-17484399-15']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+</div>
+</body>
 </html>
