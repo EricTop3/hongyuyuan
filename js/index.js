@@ -7,11 +7,11 @@ $(function () {
         });
     };
     var SetContentPage = function (data) {
-        SetPage("contentpage.tmpl", data);
+        SetPage("contentpage.html", data);
     }
     hashRouter({
         '': function () {
-            SetPage("index.tmpl", {});
+            SetPage("index.html", {});
         },
         'people-group': function () {
             mHelper.render("people-group.tmpl", "data-people.json", function (html) {
