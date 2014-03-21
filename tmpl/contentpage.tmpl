@@ -1,0 +1,28 @@
+<div class="column_content clearfix">
+    <div class="side_nav_main">
+        <div class="side_nav">
+            <h2 class="content_news_tit"><a class="more_dot"></a>关于我们</h2>
+
+            <div class="side_nav_list" id="side_nav_list">
+
+                <dl><dt id="{{ex-if title '公司概况' 'dt_check'}}"><a title="公司概况" href='#!gongsigaikuo'>公司概况</a></dt> </dl>
+                <dl><dt id="{{ex-if title '企业文化' 'dt_check'}}" ><a title="企业文化" href='#!qiyewenhua'>企业文化</a></dt> </dl>
+                <dl><dt  id="{{ex-if title '企业战略' 'dt_check'}}" ><a title="企业战略"href='#!qiyezhanlve'>企业战略</a></dt> </dl>
+                <dl><dt id="{{ex-if title '企业招聘' 'dt_check'}}" ><a title="企业招聘" href='#!qiyezhaopin'>企业招聘</a></dt> </dl>
+                <dl><dt id="{{ex-if title '业务领域' 'dt_check'}}"><a title="业务领域"  href='#!yewulingyu'>业务领域</a></dt> </dl>
+                <dl><dt id="{{ex-if title '营销网络' 'dt_check'}}" ><a title="营销网络" href='#!yingxiaowangluo'>营销网络</a></dt> </dl>
+                <dl><dt id="{{ex-if title '远景使命' 'dt_check'}}" ><a title="远景使命" href='#!yuanjingshiming'>远景使命</a></dt> </dl>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="column_cont">
+        <!--BEGIN:crumbs-->
+        <div class="crumbs"><span class="crumbs_col">您当前所在页：</span><a href="index.php">首页</a> &gt;&gt; <a
+                href="info.php?id=1">关于我们</a> &gt;&gt; <a href="info.php?id=12">{{title}}</a></div>
+        <!--END:crumbs-->
+        <h1 class="column_cont_tit">{{title}}</h1>
+
+       {{{content}}}</div>
+</div>
