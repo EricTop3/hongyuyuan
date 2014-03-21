@@ -14,7 +14,7 @@
         $.get("tmpl/" + tmpl).success(function (d) {
             template = Handlebars.compile(d);
             if (typeof data === "string") {
-                $.getJSON("../data/" + data).success(function (h) {
+                $.getJSON("data/" + data).success(function (h) {
                     /*  h = $.parseJSON(h);*/
                     var html = template(h);
                     callback(html);
